@@ -1,16 +1,87 @@
 @media screen and (min-width:960px) {
-    body {
-        background-color: orange;
+
+    body{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+      grid-template-rows: 10%, 10%, auto;
+        grid-template-areas: 
+        "header header header"
+        "menu menu menu"
+        "intro study project"
+        ;
     }
+    #header{
+        grid-area: header;
+    }
+    #menu{
+        grid-area: menu;
+    }
+    #intro{
+        grid-area: intro;
+    }
+    #study{
+        grid-area: study;
+    }
+    #project{
+        grid-area: project;
+    }
+
 }
 
 @media screen and (min-width:641px) and (max-width:959px) {
-    body {
-        background-color: green;
+    body{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 10%, 10%, 40%, auto;
+        grid-template-areas: 
+        "header header"
+        "menu menu"
+        "intro intro"
+        "study project"
+        ;
+    }
+    #header{
+        grid-area: header;
+    }
+    #menu{
+        grid-area: menu;
+    }
+    #intro{
+        grid-area: intro;
+    }
+    #study{
+        grid-area: study;
+    }
+    #project{
+        grid-area: project;
     }
 }
 @media screen and (max-width:640px) {
-    body {
-        background-color: skyblue;
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+      grid-template-rows: 10%, 10%, repeat(3, auto);
+        grid-template-areas: 
+        "header"
+        "menu"
+        "intro"
+        "study"
+        "project"
+        ;
+    }
+    #header{
+        grid-area: header;
+    }
+    #menu{
+        grid-area: menu;
+    }
+    #intro{
+        grid-area: intro;
+    }
+    #study{
+        grid-area: study;
+    }
+    #project{
+        grid-area: project;
     }
 }
