@@ -1,0 +1,16 @@
+@media screen and (min-width:960px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:959px) {
+    body {
+        background-color: green;
+    }
+}
+@media screen and (max-width:640px) {
+    body {
+        background-color: skyblue;
+    }
+}
