@@ -9,9 +9,11 @@
         "menu menu menu"
         "intro study project"
         ;
+        justify-items: center;
     }
     #header{
         grid-area: header;
+        grid-column-end: 4;
     }
     #menu{
         grid-area: menu;
@@ -39,6 +41,7 @@
         "intro intro"
         "study project"
         ;
+        justify-items: center;
     }
     #header{
         grid-area: header;
@@ -68,6 +71,7 @@
         "study"
         "project"
         ;
+        justify-items: center;
     }
     #header{
         grid-area: header;
